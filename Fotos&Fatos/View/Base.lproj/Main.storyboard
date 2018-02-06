@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Fotos_Fatos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lzO-zg-4fY">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AW7-X6-0hw">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </arscnView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtI-xa-CF6" userLabel="Subtitles">
+                                <rect key="frame" x="0.0" y="301" width="667" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uT-zb-pbh" userLabel="SubtitlesLabel">
+                                        <rect key="frame" x="33.5" y="0.0" width="600" height="74"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Era um garoto que, como eu, amava os Beatles e os Rolling Stones. Girava o mundo sempre a cantar as coisas lindas da América.">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0uT-zb-pbh" firstAttribute="centerY" secondItem="EtI-xa-CF6" secondAttribute="centerY" id="1Bn-kJ-IoG"/>
+                                    <constraint firstItem="0uT-zb-pbh" firstAttribute="centerX" secondItem="EtI-xa-CF6" secondAttribute="centerX" id="7VI-dC-SiR"/>
+                                    <constraint firstItem="0uT-zb-pbh" firstAttribute="width" secondItem="EtI-xa-CF6" secondAttribute="width" multiplier="0.9" id="IWH-Q6-sJQ"/>
+                                    <constraint firstItem="0uT-zb-pbh" firstAttribute="height" secondItem="EtI-xa-CF6" secondAttribute="height" id="bKo-Km-CCw"/>
+                                    <constraint firstAttribute="width" secondItem="EtI-xa-CF6" secondAttribute="height" multiplier="18:2" id="j5L-ou-R2e"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iP-yD-8ph" userLabel="Settings">
+                                <rect key="frame" x="457" y="10" width="200" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Da3-gk-LDg">
+                                        <rect key="frame" x="15" y="18" width="170" height="84"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TrF-7Y-u1l" userLabel="VoiceOverStackView">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Narração" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07T-UI-zVr">
+                                                        <rect key="frame" x="0.0" y="5.5" width="70.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rud-kA-Nbn" userLabel="VoiceOverSwitch">
+                                                        <rect key="frame" x="121" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="toggleVoiceOverWithSender:" destination="BV1-FR-VrT" eventType="valueChanged" id="IJP-oi-Bui"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ayW-rE-fi7" userLabel="SubtitlesStackView">
+                                                <rect key="frame" x="0.0" y="53" width="170" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legendas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwd-L0-aYZ">
+                                                        <rect key="frame" x="0.0" y="5.5" width="75" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tz5-7B-W77" userLabel="SubtitlesSwitch">
+                                                        <rect key="frame" x="121" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="toggleSubtitlesWithSender:" destination="BV1-FR-VrT" eventType="valueChanged" id="qSq-Hp-Hev"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Da3-gk-LDg" firstAttribute="width" secondItem="5iP-yD-8ph" secondAttribute="width" multiplier="0.85" id="EXe-xP-3nH"/>
+                                    <constraint firstItem="Da3-gk-LDg" firstAttribute="height" secondItem="5iP-yD-8ph" secondAttribute="height" multiplier="0.7" id="HAS-Nl-c8h"/>
+                                    <constraint firstItem="Da3-gk-LDg" firstAttribute="centerX" secondItem="5iP-yD-8ph" secondAttribute="centerX" id="WVL-17-XpQ"/>
+                                    <constraint firstAttribute="height" constant="120" id="lcI-bf-LPO"/>
+                                    <constraint firstItem="Da3-gk-LDg" firstAttribute="centerY" secondItem="5iP-yD-8ph" secondAttribute="centerY" id="qdh-GG-8MO"/>
+                                    <constraint firstAttribute="width" constant="200" id="ur2-8M-kf5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p08-cK-OCW" userLabel="SettingsButton">
+                                <rect key="frame" x="621" y="16" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="EyT-PV-5I9"/>
+                                    <constraint firstAttribute="height" constant="30" id="HvF-0W-94Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="⚙︎">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openSettings" destination="BV1-FR-VrT" eventType="touchUpInside" id="weM-Ep-2EJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EtI-xa-CF6" firstAttribute="width" secondItem="lzO-zg-4fY" secondAttribute="width" id="3q9-Lz-DgE"/>
+                            <constraint firstItem="5iP-yD-8ph" firstAttribute="top" secondItem="fvZ-5Y-5cV" secondAttribute="top" constant="10" id="9Cy-Me-e3k"/>
+                            <constraint firstItem="AW7-X6-0hw" firstAttribute="height" secondItem="lzO-zg-4fY" secondAttribute="height" id="EHl-DZ-xP2"/>
+                            <constraint firstItem="AW7-X6-0hw" firstAttribute="centerY" secondItem="fvZ-5Y-5cV" secondAttribute="centerY" id="KnK-2c-h8h"/>
+                            <constraint firstItem="AW7-X6-0hw" firstAttribute="centerX" secondItem="fvZ-5Y-5cV" secondAttribute="centerX" id="NOr-TX-EYN"/>
+                            <constraint firstItem="p08-cK-OCW" firstAttribute="top" secondItem="fvZ-5Y-5cV" secondAttribute="top" constant="16" id="Nc2-KF-QpX"/>
+                            <constraint firstItem="fvZ-5Y-5cV" firstAttribute="trailing" secondItem="p08-cK-OCW" secondAttribute="trailing" constant="16" id="U1z-CM-dFU"/>
+                            <constraint firstItem="AW7-X6-0hw" firstAttribute="width" secondItem="lzO-zg-4fY" secondAttribute="width" id="bIN-oK-bZY"/>
+                            <constraint firstItem="fvZ-5Y-5cV" firstAttribute="bottom" secondItem="EtI-xa-CF6" secondAttribute="bottom" id="i93-OP-3Yx"/>
+                            <constraint firstItem="5iP-yD-8ph" firstAttribute="trailing" secondItem="fvZ-5Y-5cV" secondAttribute="trailing" constant="-10" id="j1B-vU-Yge"/>
+                            <constraint firstItem="EtI-xa-CF6" firstAttribute="centerX" secondItem="fvZ-5Y-5cV" secondAttribute="centerX" id="mkd-GG-y3k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fvZ-5Y-5cV"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="AW7-X6-0hw" id="GNC-KP-iYc"/>
+                        <outlet property="settingsButton" destination="p08-cK-OCW" id="P2J-EY-3Ca"/>
+                        <outlet property="settingsContainer" destination="5iP-yD-8ph" id="pkj-zv-IRe"/>
+                        <outlet property="subtitlesLabel" destination="0uT-zb-pbh" id="vPW-0b-c28"/>
+                        <outlet property="subtitlesSwitch" destination="Tz5-7B-W77" id="xbs-3r-0dA"/>
+                        <outlet property="voiceOverSwitch" destination="Rud-kA-Nbn" id="gfh-fI-W7V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.733133433283363" y="16.800000000000001"/>
+        </scene>
+    </scenes>
+</document>
